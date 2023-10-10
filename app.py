@@ -10,9 +10,9 @@ st.title('Personality-Based Book Recommendations')
 # Create two columns for the dropdown and the button
 col1, col2 = st.columns([3, 1])
 
-# Add the dropdown to the first column
-options = ['Select your type', 'INTJ', 'INTP', 'ENTJ', 'ENTP', 'INFJ', 'INFP', 'ENFJ', 'ENFP', 'ISTJ', 'ISFJ', 'ESTJ', 'ESFJ', 'ISTP', 'ISFP', 'ESTP', 'ESFP']
-personality = col1.selectbox('Select your personality type:', options)
+# Add the dropdown to the first column without a label
+options = ['Select your personality type', 'INTJ', 'INTP', 'ENTJ', 'ENTP', 'INFJ', 'INFP', 'ENFJ', 'ENFP', 'ISTJ', 'ISFJ', 'ESTJ', 'ESFJ', 'ISTP', 'ISFP', 'ESTP', 'ESFP']
+personality = col1.selectbox('placeholder', options, label_visibility='collapsed')
 
 # Display the "Recommend" button in the second column
 if col2.button('Recommend'):
