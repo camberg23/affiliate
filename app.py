@@ -5,7 +5,7 @@ import pandas as pd
 df_recommendations = pd.read_csv('recommendation_paragraphs.csv')
 
 # Streamlit code
-st.title('Personality-Based Book Recommendations')
+st.title('Amazon Affiliate Book Recs by TypeFinder Type')
 
 # Create two columns for the dropdown and the button
 col1, col2 = st.columns([3, 1])
